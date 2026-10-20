@@ -1,0 +1,43 @@
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    margin-top: 30px;
+}
+
+.grid-container {
+    display: grid;
+}
+
+.grid-container div {
+    padding: 20px;
+    text-align: center;
+    border: 1px solid steelblue;
+}
+
+/* Example 1: 20px gap for rows and columns */
+.example1 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.example1 div {
+    background-color: lightblue;
+}
+
+/* Example 2: 30px row gap and 10px column gap */
+.example2 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px 10px;
+}
+
+.example2 div {
+    background-color: lightgreen;
+}
